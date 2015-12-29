@@ -1,5 +1,5 @@
 # jetsonTX1GPIO
-A straightforward library to interface with the Jetson TX1 Development Kit GPIO  pins.
+A straightforward library to interface with the NVIDIA Jetson TX1 Development Kit GPIO  pins.
 
 Based on Software by RidgeRun
 https://developer.ridgerun.com/wiki/index.php/Gpio-int-test.c
