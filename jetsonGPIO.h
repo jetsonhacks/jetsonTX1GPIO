@@ -42,7 +42,7 @@
  /****************************************************************
  * Constants
  ****************************************************************/
- 
+
 #define SYSFS_GPIO_DIR "/sys/class/gpio"
 #define POLL_TIMEOUT (3 * 1000) /* 3 seconds */
 #define MAX_BUF 64
@@ -65,7 +65,7 @@ enum pinValues {
 
 enum jetsonGPIONumber {
     gpio57  =  57,    // J3A1 - Pin 50
-	gpio160 = 160,	  // J3A2 - Pin 40	
+	gpio160 = 160,	  // J3A2 - Pin 40
 	gpio161 = 161,    // J3A2 - Pin 43
 	gpio162 = 162,    // J3A2 - Pin 46
 	gpio163 = 163,    // J3A2 - Pin 49
@@ -83,7 +83,15 @@ enum jetsonTX1GPIONumber {
        gpio186 = 186,    // J21 - Pin 31 - Input  - GPIO9_MOTION_INT
        gpio187 = 187,    // J21 - Pin 37 - Output - GPIO8_ALS_PROX_INT
        gpio219 = 219,    // J21 - Pin 29 - Output - GPIO19_AUD_RST
-} ;
+};
+
+enum jetsonTX2GPIONumber {
+       gpio481 = 481,      // J21 - Pin 18 - Input - GPIO16_MDM_WAKE_AP
+       gpio398 = 398,      // J21 - Pin 29 - Output - GPIO19_AUD_RST
+       gpio298 = 298,      // J21 - Pin 31 - Input  - GPIO9_MOTION_INT
+       gpio389 = 389,      // J21 - Pin 33 - Bidir  - GPIO11_AP_WAKE_BT
+       gpio388 = 388       // J21 - Pin 37 - Output - GPIO8_ALS_PROX_INT
+};
 
 
 int gpioExport ( jetsonGPIO gpio ) ;
